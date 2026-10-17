@@ -1,0 +1,15 @@
+{
+	"name": "dorifactoryazureproject",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "27946fb8-50ed-4452-a07e-d74e09526dc3",
+		"tenantId": "2a2684d9-fb17-420f-b37e-7bd431c4485c"
+	}
+}
