@@ -182,10 +182,7 @@
 												"referenceName": "Parquet_dynamic",
 												"type": "DatasetReference",
 												"parameters": {
-													"container": {
-														"value": "@item().schema",
-														"type": "Expression"
-													},
+													"container": "bronze",
 													"folder": {
 														"value": "@item().table",
 														"type": "Expression"
@@ -317,14 +314,6 @@
 									}
 								]
 							}
-						},
-						{
-							"name": "ForEach1_copy1",
-							"type": "ForEach",
-							"state": "Inactive",
-							"onInactiveMarkAs": "Succeeded",
-							"dependsOn": [],
-							"userProperties": []
 						}
 					]
 				}
