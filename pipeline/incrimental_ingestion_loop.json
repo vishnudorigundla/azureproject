@@ -1,5 +1,5 @@
 {
-	"name": "incrimental_ingestion_copy1",
+	"name": "incrimental_ingestion_loop",
 	"properties": {
 		"activities": [
 			{
