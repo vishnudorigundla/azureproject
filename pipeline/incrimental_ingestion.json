@@ -5,8 +5,6 @@
 			{
 				"name": "AzureSQLTo Lake",
 				"type": "Copy",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "last_cdc",
@@ -69,10 +67,7 @@
 						"referenceName": "Parquet_dynamic",
 						"type": "DatasetReference",
 						"parameters": {
-							"container": {
-								"value": "@pipeline().parameters.schema",
-								"type": "Expression"
-							},
+							"container": "bronze",
 							"folder": {
 								"value": "@pipeline().parameters.table",
 								"type": "Expression"
@@ -88,8 +83,6 @@
 			{
 				"name": "last_cdc",
 				"type": "Lookup",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -126,8 +119,6 @@
 			{
 				"name": "current",
 				"type": "SetVariable",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [],
 				"policy": {
 					"secureOutput": false,
@@ -219,7 +210,7 @@
 									{
 										"type": "Query",
 										"text": {
-											"value": "@select max(@{pipeline().parameters.cdc_col}) as cdc from @{pipeline().parameters.schema}.@{pipeline().parameters.table}",
+											"value": "select max(@{pipeline().parameters.cdc_col}) as cdc from @{pipeline().parameters.schema}.@{pipeline().parameters.table}",
 											"type": "Expression"
 										}
 									}
@@ -283,18 +274,9 @@
 									"referenceName": "Json_dynamic",
 									"type": "DatasetReference",
 									"parameters": {
-										"container": {
-											"value": "@pipeline().parameters.schema",
-											"type": "Expression"
-										},
-										"folder": {
-											"value": "@pipeline().parameters.table",
-											"type": "Expression"
-										},
-										"file": {
-											"value": "@concat(pipeline().parameters.table,'_',variables('current'))",
-											"type": "Expression"
-										}
+										"container": "bronze",
+										"folder": "cdc",
+										"file": "empty.json"
 									}
 								}
 							],
@@ -303,18 +285,9 @@
 									"referenceName": "Json_dynamic",
 									"type": "DatasetReference",
 									"parameters": {
-										"container": {
-											"value": "@pipeline().parameters.schema",
-											"type": "Expression"
-										},
-										"folder": {
-											"value": "@pipeline().parameters.table",
-											"type": "Expression"
-										},
-										"file": {
-											"value": "@concat(pipeline().parameters.table,'_',variables('current'))",
-											"type": "Expression"
-										}
+										"container": "bronze",
+										"folder": "cdc",
+										"file": "cdc.json"
 									}
 								}
 							]
