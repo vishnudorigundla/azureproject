@@ -1,3 +1,4 @@
+
 # Spotify End-to-End Data Engineering Project on Microsoft Azure
 
 ## 1. Project Overview
@@ -254,3 +255,16 @@ By combining Azure Data Factory, ADLS Gen2, Azure Databricks, PySpark, Delta Lak
 **Architecture:** Medallion Architecture
 
 **Source control:** Git integration for Azure Data Factory and Azure Databricks
+<img width="1899" height="839" alt="image" src="https://github.com/user-attachments/assets/ad32afaa-6185-4849-ba1d-90d010657ea0" />
+<img width="1890" height="776" alt="image" src="https://github.com/user-attachments/assets/6014728a-14a8-4838-8232-88e469961bad" />
+<img width="1913" height="766" alt="image" src="https://github.com/user-attachments/assets/b752797b-aabc-47c3-af67-4ed80700a06e" />
+<img width="1919" height="919" alt="image" src="https://github.com/user-attachments/assets/7e6a1571-efea-46ae-8812-1c10c1bfadcf" />
+<img width="1919" height="898" alt="image" src="https://github.com/user-attachments/assets/2b1c5543-c719-46e7-9314-eb782fbc6523" />
+
+<img width="1898" height="840" alt="image" src="https://github.com/user-attachments/assets/eba751a7-216b-4d1d-982d-c3b69abd5492" />
+<img width="1916" height="876" alt="image" src="https://github.com/user-attachments/assets/b270ea43-9be2-4b5a-bdd7-feaa5a201429" />
+
+
+
+
+
