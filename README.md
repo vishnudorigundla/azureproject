@@ -263,8 +263,13 @@ By combining Azure Data Factory, ADLS Gen2, Azure Databricks, PySpark, Delta Lak
 
 <img width="1898" height="840" alt="image" src="https://github.com/user-attachments/assets/eba751a7-216b-4d1d-982d-c3b69abd5492" />
 <img width="1916" height="876" alt="image" src="https://github.com/user-attachments/assets/b270ea43-9be2-4b5a-bdd7-feaa5a201429" />
+<img width="1906" height="859" alt="image" src="https://github.com/user-attachments/assets/c799bed4-6c58-4bff-80cc-1d4a35f6acfc" />
+<img width="1899" height="846" alt="image" src="https://github.com/user-attachments/assets/ddbe2749-f872-4f2f-8776-5e321b55a82e" />
+
+<img width="1913" height="848" alt="image" src="https://github.com/user-attachments/assets/3cc8267b-1632-4441-a7c0-52a61e2a0c49" />
 
 
+<img width="1909" height="892" alt="image" src="https://github.com/user-attachments/assets/da634ec1-998b-4d43-a1ce-7a91d83204a1" />
 
 
 
