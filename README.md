@@ -255,6 +255,9 @@ By combining Azure Data Factory, ADLS Gen2, Azure Databricks, PySpark, Delta Lak
 **Architecture:** Medallion Architecture
 
 **Source control:** Git integration for Azure Data Factory and Azure Databricks
+
+## 13. Outputs
+
 <img width="1899" height="839" alt="image" src="https://github.com/user-attachments/assets/ad32afaa-6185-4849-ba1d-90d010657ea0" />
 <img width="1890" height="776" alt="image" src="https://github.com/user-attachments/assets/6014728a-14a8-4838-8232-88e469961bad" />
 <img width="1913" height="766" alt="image" src="https://github.com/user-attachments/assets/b752797b-aabc-47c3-af67-4ed80700a06e" />
